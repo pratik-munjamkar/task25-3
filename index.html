@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+  <h1>Currency Converter</h1>
+    <div class="container">
+          <div class="currency">
+            <select id="from_currency" onchange="change(this.value)">
+            
+            </select>
+            <input type="number" id="from_amount" placeholder="0" value="1" onchange="change(this.value)"/>
+          </div>
+
+          <div class="rate" id="rate">            
+          </div>
+
+          <div class="currency">
+            <select id="to_currency" onchange="change(this.value)">
+            
+            </select>
+            <input type="number" id="to_amount" placeholder="0" onchange="reverse(this.value)" value="0"/>
+          </div>
+      </div>
+      
+
+    <script src="script.js"></script>
+</body>
+</html>
